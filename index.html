@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="refresh" content="300" />
     <title>Project Caelum</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css"
         href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -12,15 +15,146 @@
 
 <body>
     <div id="chart"></div>
+    <div id="updatedOn"></div>
     <div id="buttons">
         <button type="button" class="up"><i class="fa fa-arrow-up"></i></button>
         <button type="button" class="down"><i class="fa fa-arrow-down"></i></button>
         <button type="button" class="left"><i class="fa fa-arrow-left"></i></button>
         <button type="button" class="right"><i class="fa fa-arrow-right"></i></button>
     </div>
-    <div id="updatedOn"></div>
-    <script src="https://d3js.org/d3.v5.js"></script>
-    <script src="app.js"></script>
+
+
+    <nav id="navigation" class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">Project Caelum</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#project_info">Project Info</a> <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about_me">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div id="project_info" class="infoSection section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1>About Project Caelum</h1>
+                    <p>The main objective of Project Caelum is to create a fun and interactive data visualization
+                        website to raise awareness about the global climate change.
+                    </p>
+                    <p>
+                        Project Caelum uses viewer-driven narrative approach of data visualization which allow users to
+                        freely interact with the data and tell their own story. This project is still in alpha version
+                        with many lack of interactive function.
+                    </p>
+
+                    <h4>To be Added</h4>
+                    <ul style="list-style-type:square">
+                        <li>Legend that show range of temperature of each colour ranging from Hot Red to Cold Blue</li>
+                        <li>Draggable Map</li>
+                        <li>Zoomable map that will zoom into each country on click and show the overal statistical data
+                            and live temperature data of each state</li>
+                        <li>Integrate machine learning model to forecast future temperature based on historical pattern
+                            and data</li>
+                </div>
+                <div class="col-md-6">
+                    <img class="flowImage" src="img/flow_diagram.png">
+                    <br>
+                    <div style="text-align:center">
+                        <a href="https://github.com/JoeSiew" role="button" class="btn btn-outline-secondary">
+                            View source on Github <img class="gh-logo" src="img/github_logo.png">
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="about_me" class="aboutSection section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <div style="background-color: black;width:359px;height:542px">
+                        <img class=" aboutImage" src="img/about_me.jpg">
+                    </div>
+
+
+                </div>
+                <div class="col-md-7">
+                    <h4> My name is Siew Yong Jun</h4>
+
+                    <p>
+                        I am an undergraduate undertaking a degree in Bachelor of Science (Hons) Software Engineering
+                        with a CGPA of 3.74 in Universiti Tunku Abdul Rahman. I am in final year and is looking forward
+                        for internship in October 2019.
+                    </p>
+                    <p>
+                        I am passionate and always look forward
+                        to learning new things. Recently, I am very enthusiastic to explore and experience about the
+                        role of Machine Learning Engineer. Project Caelum is a hobby project which
+                        I am using to learn about full stack web development, data visualization and deployment of
+                        machine learning to production.
+                    </p>
+                    <p>
+                        Last but not least, you may contact me if you have any suggestion or enquiry about the project
+                        from the contact section below.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="contact" class="contactSection section">
+
+        <div class="col-md-12 text-center">
+            <h5>CONTACT ME @ Joesiew98@gmail.com</h5>
+            <h6>OR</h6>
+            <p>
+                <a href="https://github.com/JoeSiew" class="contactButton">My Linkedin <img
+                        src="img/linkedin_logo1.png"></a>
+                &nbsp;
+                <a href="https://github.com/JoeSiew" class="contactButton">My Github <img src="img/github_logo.png"></a>
+            </p>
+        </div>
+    </div>
+
+
+    <div class="copyrightSection">
+        <div class="col-md-12 text-center">
+            <p>&copy; Copyright 2019 | App icon by <a href="https://icons8.com/"
+                    style="color:white;text-decoration: underline"> icons8</a></p>
+        </div>
+    </div>
+
+
+    <script src=" https://d3js.org/d3.v5.js"> </script>
+    <script src="map.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
