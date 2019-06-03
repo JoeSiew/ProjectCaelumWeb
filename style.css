@@ -17,6 +17,10 @@
     border-radius: 2px;
 } */
 
+body {
+    /* font-family:"Lucida Console", Monaco, monospace; */
+    font-family:"Verdana", Geneva, sans-serif
+}
 #chart{
     margin:0px;
     background-color: #f7f7f7;
@@ -37,7 +41,7 @@
 }
 
 button{
-    background-color:#000852a2;
+    background-color:rgba(206, 91, 87, 0.938);
     color:#fff;
     width:100px;
     padding:10px;
@@ -55,7 +59,8 @@ button:hover{
 }
 
 #navigation{
-    background-color: #000852a2;
+    background-color: rgba(206, 91, 87, 0.938);
+    border-bottom: 3px solid rgba(175, 75, 71, 0.938);
     padding:20px 10px;
     z-index:100;
 }
@@ -94,8 +99,8 @@ button:hover{
     margin-left: auto;
     margin-right: auto;
     z-index: 1;
-    padding: 110px 100px;
-    border: 3px solid #000852a2;
+    padding: 100px 100px;
+    border: 3px solid #d3d3d3;
     border-radius: 2px;
     max-width:100%;
     max-height:100%;
@@ -111,14 +116,14 @@ button:hover{
     padding:50px 0;
 }
 .aboutImage{   
-
     max-width: 100%;
     max-height: 100%;
     opacity: 0.5;
 }
 
 .contactSection{
-    background-color:#000852a2;
+    background-color:rgba(206, 91, 87, 0.938);
+    border-top: 5px solid rgba(175, 75, 71, 0.938);
     color:#fff;
     padding:30px 0;
 }
@@ -135,14 +140,15 @@ button:hover{
 
 .contactButton:hover {
 	text-decoration: none;
-	color: #000852a2;
+	color: #be2e1ebb;
     background-color: #fff;
 }
 
 .copyrightSection{
-    background-color: #000000d7;
+    background-color: #000000e7;
     color:#fff;
-    padding:15px 0px;
+    padding:12px 0px;
+    border:1px solid rgb(2, 1, 1);
 }
 
 .copyrightSection p{
