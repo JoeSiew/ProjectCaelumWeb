@@ -30,7 +30,7 @@ var map = svg.append('g')
 map.append('rect')
 
 // Data
-var url = "https://project-caelum.herokuapp.com/data";
+var url = "https://project-caelum-api.herokuapp.com/data";
 d3.json(url)
     .then(function (temperature_data) {
         var updatedOn = document.getElementById('updatedOn');
